@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>password</title>
+	<script type="text/javascript">
+		function checkpassword() {
+			var password = document.getElementById("passwordbox");
+			var passwordText= password.value;
+			if(passwordText== "pwease"){
+				return true;
+			}
+			else{
+				alert("Access Denied")
+				return false;
+			}
+		}
+	</script>
+	<style type="text/css">
+		body{
+			background-color:#386641;
+			color:  #fff1d0;}
+		a:hover{
+			color: #386641;
+			text-decoration: none;
+
+		}
+		a:link,a:visited{
+			color: #386641;
+			text-decoration: none;
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>WELCOME</h1>
+	<h3>Enter the password... if you dare!</h3>
+	<p>password: <input id="passwordbox" type="password"></p>
+	<button><a href="website01.html" onclick="return checkpassword();">Go Here!</a></button>
+</body>
+</html>
